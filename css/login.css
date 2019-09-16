@@ -1,0 +1,138 @@
+#head {
+    width: 100%;
+    height: 750px;
+    margin: 0px;
+    background-image: url("../pictures/1.gif");
+    /*通过以下属性，使图片填充 */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+/* 返回按钮样式 */
+
+#fan {
+    width: 160px;
+    height: 100px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    margin-top: 400px;
+    margin-left: 20px;
+}
+
+
+/*清除 ul,a 原样式*/
+
+ul,
+a {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*一级菜单样式*/
+
+#menu {
+    width: 650px;
+    height: 40px;
+    /* margin: 0px auto; */
+    margin-top: 50px;
+    margin-left: 200px;
+    background-color: cadetblue;
+    font-size: 18px;
+    font-family: 微软雅黑;
+}
+
+#menu ul li {
+    float: left;
+    /*包含块*/
+    position: relative;
+}
+
+#menu ul li a {
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+#menu ul li a:hover {
+    color: #ffd800;
+    background: #970606;
+}
+
+
+/*二级菜单样式*/
+
+#menu ul li ul {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    display: none;
+}
+
+#menu ul li ul li {
+    float: none;
+}
+
+#menu ul li ul li a {
+    background: #f00;
+    border-top: 1px solid #ccc;
+}
+
+
+/*一级菜单悬停时二级菜单可见*/
+
+#menu ul li:hover ul {
+    display: block;
+}
+
+#main {
+    width: 100%;
+    height: 450px;
+    margin: 0px;
+    background-color: teal;
+}
+
+#p {
+    width: 260px;
+    height: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    color: black;
+    margin-top: 50px;
+    margin-left: 505px;
+    float: left;
+}
+
+#span {
+    font-size: 18px;
+    font-family: 微软雅黑;
+    color: red;
+    float: center;
+    display: none;
+}
+
+
+/* form 样式 */
+
+#dl {
+    width: 260px;
+    height: 230px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 500px;
+    float: left;
+    border: 1px burlywood dashed;
+    background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>无极网</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script type="text/javascript" src="./js/js-3.4-min.js"></script>
+
+    <script type="text/javascript">
+
+        ////////////////////////////////////////////////////////////////////////////////
+
+        //视频仓库地址
+        var vUrl = "./videos/";
+
+        // function show(idName, html) { //直接展示
+        //     document.getElementById(idName).src = html;
+        // }
+        vu = vUrl;
+        var i = 1;
+        function previous() {
+            i--;
+            if (i <= 0) { //判断视频个数，不能小于１
+                i = 1;
+                alert("已经是第一个了");
+                return;
+            }
+            document.getElementById("v2").src = vu + i + ".mp4";
+            document.getElementById("v1").load();
+        }
+
+        //视频个数的上限(实际的数量加一)
+        var up_limit = 5;
+
+        function next() {
+            i++;
+            if (i >= up_limit) { //判断视屏个数不能大于１２，只有１２个视屏
+                i = up_limit - 1;
+                alert("已经是最后一个了。。。");
+                return;
+            }
+            document.getElementById("v2").src = vu + i + ".mp4";
+            document.getElementById("v1").load();
+        }
+        ////////////////////////////////////////////////////////////////////////////////
+    </script>
+
+<body>
+
+    <div id="id_img">
+        <img src="./pictures/7.jpg" alt="hello,ha" id="img">
+    </div>
+
+    <div id="left">
+
+        <ol id="abc">
+            <li>
+                <a href="http://www.baidu.com">
+                    去百度
+                </a>
+            </li>
+            <hr />
+
+            <li>
+                <a href="./course.html">课程表
+                </a>
+            </li>
+            <hr />
+
+            <li>
+                <a href="./login.html">
+                    登录页面
+                </a>
+            </li>
+            <hr />
+
+            <li>
+                <a href="./register.html">
+                    注册页面
+                </a>
+            </li>
+            <hr />
+
+            <li>
+                <a href="./msg.html">
+                    个人信息
+                </a>
+            </li>
+            <hr />
+
+            <li>
+                <a href="./news.html">
+                    新闻页
+                </a>
+            </li>
+            <hr />
+            <li>
+                <a href="./x.html">
+                    闲篇
+                </a>
+                </a>
+            </li>
+            <hr />
+
+
+        </ol>
+    </div>
+
+    <div id="right">
+        <video id="v1" controls="controls" width="100%" height="100%" autoplay="autoplay">
+            <source id="v2" src="./videos/1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="menu">
+        <button id="button" onclick="previous()">前一个</button>
+        <button id="button" onclick="next()">后一个</button>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+#top {
+    width: 100%;
+    height: 120px;
+}
+
+#id_img {
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    /*通过一下属性，先填充 */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#left {
+    width: 10%;
+    height: 600px;
+    background-color: cadetblue;
+    float: left;
+    margin-right: 10px;
+}
+
+#abc {
+    /* 下面代码是一行显示省略号： */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#right {
+    width: 81%;
+    height: 600px;
+    /* background-color: gray; */
+    float: left;
+}
+
+#menu {
+    width: 100px;
+    height: 600px;
+    background-color: dimgrey;
+    margin-left: 10px;
+    float: left;
+}
+
+#button {
+    width: 100px;
+    height: 50px;
+    background-color: #gray;
+    margin-top: 150px;
+    float: left;
+}

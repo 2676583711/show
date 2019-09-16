@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>无极网</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/news.css">
+    <script type="text/javascript" src="./js/js-3.4-min.js"></script>
+
+      <script type="text/javascript">
+        // jquery 实现 页面跳转
+        $(document).ready(function() {
+            $("#f").click(function() {
+                window.location.replace("./index.html");
+            })
+        });
+
+var i=1;
+function chang_img(){
+$("#img").attr('src',"./pictures/n"+i+".jpg");
+i++;
+if(i>3){
+    i=1;
+ } 
+}
+        // 定时器
+       setInterval("chang_img()",1000);
+    </script>
+</head>
+
+<body>
+
+
+    <div id="top">
+          <div id="top_two">
+             <a href="#" id="text_under">百度首页</a>
+            <a href="#" id="text_under">登录</a>
+            <a href="#" id="text_under">注册</a>
+            <a href="#" id="text_under">百度新闻客户端</a>
+        </div>
+        <div id="top_one">
+            <a href="#" id="text_under">网页</a>
+            <a href="#" >新闻</a>
+            <a href="#" id="text_under">贴吧</a>
+            <a href="#" id="text_under">知道</a>
+            <a href="#" id="text_under">音乐</a>
+            <a href="#" id="text_under">图片</a>
+            <a href="#" id="text_under">视频</a>
+            <a href="#" id="text_under">地图</a>
+            <a href="#" id="text_under">文库</a>
+        </div>
+
+
+    </div>
+
+    <hr/>
+     <input id="f" type="button" value="返回首页" />
+    <div id="head">
+        <div id="head_one"><img src="./pictures/news.png" width="160px" height="50px"> </div>
+        <div id="head_two"> 
+            <form action="#">
+                <input type="text" width="300px" height="90px" />
+                <input type="submit" value="百度一下" width="300px" height="90px"/>
+            </form>
+        </div> 
+        <div id="head_three"><a href="#">帮助</a></div>
+    
+            
+    
+         
+       
+           
+        </span>
+    </div>
+
+    <div id="menu">
+        <div id="menu2">
+            <ul>
+                <li  >
+                 <a href="#" style="display: block;width: 90px;height: 40px;line-height: 40px; text-align: right; margin-top:-2px;"> 
+                    <img src="./pictures/baidu.jpg" width="30px" height="25px" style="margin-top:7px;" />首页</a>
+                </li>
+                <li><a href="#">国内</a>
+                </li>
+                <li><a href="#">国际</a>
+                </li>
+                <li><a href="#">军事</a>
+                </li>
+                <li><a href="#">财经</a>
+                </li>
+                <li><a href="#">娱乐</a>
+                </li>
+                <li><a href="#">体育</a> </li>
+                <li><a href="#">游戏</a> </li>
+                <li><a href="#">互联网</a> </li>
+                <li><a href="#">女人</a> </li>
+                <li><a href="#">汽车</a> </li>
+                <li><a href="#">房产</a> </li>
+            </ul>
+        </div>
+    </div>
+ </a> 
+
+
+
+<div id="main">
+    <div id="main_left">  
+   <a href="#"> <span style="color: blue;text-decoration: underline;"><h3>热点要闻</h3></span></a>
+    <ul  type="square">
+        <a href="#"><li><b>习近平会见德国总理</b></li></a>
+        <li> 香港各界呼吁止暴制乱  以实际行动守护"东方之珠"</li>
+        <li>将道德榜样化为奋进新时代的无穷动力 《追梦人》</li>
+        <li>中国稳健前行|中国特色社会主义民主的特点和优势</li>
+        <li>它做到了，而且比我们想象的更好 心连心 爱香港</li>
+        <li>人民日报任理轩:狂风骤雨不能掀翻大海  新华时评</li>
+        <a href="#"><li> <b>央行:9月16日起降准0.5个百分点,释放资金9000亿</b></li></a>
+        <li> 十九届中央第四轮巡视将对37个单位开展常规巡视 ?</li>
+        <li> 发改委副主任回应猪肉涨价：增加猪肉等供应</li>
+        <li> 香港警方:本周末机场交通预计出现严重阻塞</li>
+        <li> 人民银行9月10日发行中华人民共和国成立70周年纪念币一套</li>
+        <li>学美术注定乞食?港男央美毕业不回家选择留京创画廊</li>
+        <a href="#"><li><b>上海迪士尼:游客将可携带供自己食用的食品进入乐园 </b></li></a>
+        <li>美参议员威胁通过涉港法案 耿爽:我们不惧任何威胁和恫吓</li>
+        <li>台风"玲玲"影响涉及10个省份,国家防总启动Ⅳ级应急响应</li>
+        <li>联播说香港:《新闻联播》里香港市民的这句话很赞!</li>
+        <li>海南省委常委、海口市委书记张琦接受审查调查</li>
+        <li>台湾岛内个别人及个别部门就中所关系胡言乱语,外交部驳斥</li>
+    </ul>
+    </div>
+    <div id="main_right">  
+        <img id="img" src="./pictures/n1.jpg" width="500px" height="450px">
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+ 

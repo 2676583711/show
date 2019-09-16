@@ -1,0 +1,37 @@
+body {
+  background-image: url("../pictures/x2.jpg");
+  /*通过以下属性，使图片填充 */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#top {
+  width: 500px;
+  height: 200px;
+  color: black;
+  margin-top: -30px;
+  margin-left: 0px;
+  text-align: center;
+}
+
+#main {
+  width: auto;
+  height: auto;
+  color: black;
+  margin-top: 260px;
+  margin-left: -460px;
+  text-align: center;
+}
+
+#main_left {
+    width: 230px;
+    height: 600px;
+    color: black;
+    margin-top: -500px;
+    margin-left: 1120px;
+    text-align: center;
+     /*通过一下属性，先填充 */
+     background-size: 100%;
+     background-repeat: no-repeat;
+  }

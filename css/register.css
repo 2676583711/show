@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    /*通过一下属性，先填充 */
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#sign {
+    width: 400px;
+    height: 50px;
+    margin-top: 60px;
+    margin-left: 880px;
+    float: left;
+}
+
+#main {
+    width: 400px;
+    height: 800px;
+    margin-top: 10px;
+    margin-left: 750px;
+    /* background-color: teal; */
+    border: 2px black solid;
+    /* display: block; */
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#img {
+    width: 530px;
+    height: 600px;
+    position: absolute;
+    top: 270px;
+    left: 120px;
+}
+
+
+/* 返回首页按钮样式 */
+
+#fan {
+    width: 100px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    color: black;
+    position: absolute;
+    top: 70px;
+    left: 120px;
+}
